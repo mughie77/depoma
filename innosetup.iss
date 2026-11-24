@@ -2,9 +2,9 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 ; Non-commercial use only.
 
-#define MyAppName "BILLYET DEPO"
-#define MyAppVersion "1.0"
-#define MyAppPublisher "BPR MANUK AYU"
+#define MyAppName "Billyet Depo"
+#define MyAppVersion "1.4"
+#define MyAppPublisher "BPR Manuk Ayu"
 #define MyAppURL "https://bprmanukayu.com/"
 #define MyAppExeName "depoma.exe"
 #define MyAppAssocName MyAppName + " File"
@@ -16,7 +16,7 @@
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppId={{1ADEE827-BC24-4FA5-8EC4-5F116CABFE3F}
+AppId={{16686D66-4A48-4A9E-89B0-EFD4606AA75E}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={cm:NameAndVersion,{#EscapeConstArgument(MyAppName)},{#EscapeConstArgument(MyAppVersion)}}
@@ -37,9 +37,8 @@ ChangesAssociations=yes
 DefaultGroupName={#MyAppName}
 ; Uncomment the following line to run in non administrative install mode (install for current user only).
 ;PrivilegesRequired=lowest
-OutputDir=C:\xampp8.2\htdocs\depoma\build\windows\x64\runner\Release
-OutputBaseFilename=BILLYET DEPO
-SetupIconFile=C:\xampp8.2\htdocs\depoma\build\windows\x64\runner\Release\7e425991-e511-4d32-aa81-8e4c0b9d506c.ico
+OutputBaseFilename=Billyet Depo Setup
+SetupIconFile=C:\Users\CODE_COMP\Downloads\7e425991-e511-4d32-aa81-8e4c0b9d506c.ico
 SolidCompression=yes
 WizardStyle=modern dynamic
 
@@ -53,7 +52,6 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Source: "C:\xampp8.2\htdocs\depoma\build\windows\x64\runner\Release\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\xampp8.2\htdocs\depoma\build\windows\x64\runner\Release\concrt140.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\xampp8.2\htdocs\depoma\build\windows\x64\runner\Release\dartjni.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\xampp8.2\htdocs\depoma\build\windows\x64\runner\Release\depoma.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\xampp8.2\htdocs\depoma\build\windows\x64\runner\Release\flutter_windows.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\xampp8.2\htdocs\depoma\build\windows\x64\runner\Release\install_dan_jalankan.bat"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\xampp8.2\htdocs\depoma\build\windows\x64\runner\Release\msvcp140.dll"; DestDir: "{app}"; Flags: ignoreversion
